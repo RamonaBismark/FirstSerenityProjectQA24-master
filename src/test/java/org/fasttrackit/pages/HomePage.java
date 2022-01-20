@@ -20,6 +20,12 @@ public class HomePage extends BasePage {
     @FindBy(css ="[title='Search']")
     private WebElementFacade searchIcon;
 
+    @FindBy (css= ".skip-cart .label")
+    private WebElementFacade cartIcon;
+
+    @FindBy (css =".cart-link")
+    private WebElementFacade viewShoppingCartLink;
+
     public void clickAccountLink() {
         clickOn(accountLink);
     }
@@ -37,4 +43,12 @@ public class HomePage extends BasePage {
     }
 
 
+    public void clickOnCartIcon() {
+        clickOn(cartIcon);
+    }
+
+    public void clickOnViewShoppingCartLink() {
+        waitFor(viewShoppingCartLink);
+        clickOn(viewShoppingCartLink);
+    }
 }

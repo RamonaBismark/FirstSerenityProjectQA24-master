@@ -9,7 +9,11 @@ public class SearchTest extends BaseTest{
     public void searchTest(){
         loginSteps.doLogin(EnvConstants.USER_EMAIL,EnvConstants.USER_PASSWORD);
         searchSteps.executeSearch("ISLA CROSSBODY HANDBAG");
+
     }
+
+
+
 
 
 
